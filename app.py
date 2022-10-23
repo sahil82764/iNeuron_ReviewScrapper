@@ -16,7 +16,7 @@ logging.basicConfig(filename = 'flask_logs.log', format = '%(asctime)s %(message
 # MongoDB connection using mongo connection module
 databaseName = 'iNeuron_ReviewScrapper'
 collectionName = 'course_collection'
-dbcon = mongodbconnection(username = 'mongodb', password= 'mongodb')
+dbcon = mongodbconnection(username = 'username', password= 'password')
 ineuronCollection = dbcon.getCollection(dbName = 'iNeuron_ReviewScrapper', collectionName = 'course_collection')
 
 # Function which automatically scraps all course data and saves to MongoDB server
